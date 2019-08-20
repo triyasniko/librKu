@@ -40,7 +40,9 @@
     <link rel="stylesheet" type="text/css" href="assets/css/linearicons.css" >
     <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
-    <link rel="stylesheet" type="text/css" href="assets/plugins/dataTables/dataTables.bootstrap.css">
+    <!-- Style dataTables -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/dataTables/css/jquery.dataTables.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/dataTables/css/dataTables.bootstrap4.min.css">
 </head>
 
 <body>
@@ -231,8 +233,9 @@
     <script type="text/javascript" src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
     <script type="text/javascript" src="assets/plugins/tether/dist/js/tether.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="assets/plugins/dataTables/jquery.dataTables.js"></script>
-	<script src="assets/plugins/dataTables/dataTables.bootstrap.js"></script>
+	<!-- dataTables -->
+    <script type="text/javascript" src="assets/plugins/dataTables/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/dataTables/js/dataTables.bootstrap4.min.js"></script>
     <!-- jquery slimscroll js -->
     <script type="text/javascript" src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
     <!-- modernizr js -->

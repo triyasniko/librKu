@@ -110,8 +110,8 @@
         <!--Follow block Ends-->
         <div class="col-md-12">
             <div class="card card-contact borderless-card">
-                <div class="table-responsive">
-                    <table class="table table-striped table-bordered table-hover" id="dataTable">
+                <div class="">
+                    <table width="100%" class="table table-responsive table-striped table-bordered table-hover" id="dataTable">
                         <thead>
                             <tr>
                                 <th>Rendering engine</th>
@@ -125,6 +125,13 @@
                             <tr class="odd gradeX">
                                 <td>Trident</td>
                                 <td>Internet Explorer 4.0</td>
+                                <td>Win 95+</td>
+                                <td class="center">4</td>
+                                <td class="center">X</td>
+                            </tr>
+                            <tr class="odd gradeX">
+                                <td>Trident</td>
+                                <td>firefox 4.0</td>
                                 <td>Win 95+</td>
                                 <td class="center">4</td>
                                 <td class="center">X</td>
