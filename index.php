@@ -35,12 +35,12 @@
     <link rel="stylesheet" type="text/css" href="assets/pages/menu-search/css/component.css">
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/plugins/dataTables/dataTables.bootstrap.css">
+    
     <!--color css-->
     <link rel="stylesheet" type="text/css" href="assets/css/linearicons.css" >
     <link rel="stylesheet" type="text/css" href="assets/css/simple-line-icons.css">
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
-    
+    <link rel="stylesheet" type="text/css" href="assets/plugins/dataTables/dataTables.bootstrap.css">
 </head>
 
 <body>
@@ -114,28 +114,28 @@
 
                             <div class="pcoded-navigatio-lavel">Layout</div>
                             <ul class="pcoded-item pcoded-left-item">
-                                <li class="pcoded-trigger active">
+                                <li class="<?php if(!$_GET['page']){ echo 'pcoded-trigger active'; } ?>">
                                     <a href="index.php">
-                                        <span class="pcoded-micon"><i class="ti-layout-media-overlay"></i></span>
+                                        <span class="pcoded-micon"><i class="ti-desktop"></i></span>
                                         <span class="pcoded-mtext">Dashboard</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="pcoded ">
+                                <li class="<?php if($_GET['page']=='anggota'){ echo 'pcoded-trigger active'; } ?>">
                                     <a href="?page=anggota">
-                                        <span class="pcoded-micon"><i class="ti-credit-card"></i></span>
+                                        <span class="pcoded-micon"><i class="ti-user"></i></span>
                                         <span class="pcoded-mtext">Data Anggota</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="pcoded ">
+                                <li class="<?php if($_GET['page']=='buku'){ echo 'pcoded-trigger active'; } ?>">
                                     <a href="?page=buku">
                                         <span class="pcoded-micon"><i class="ti-agenda"></i></span>
                                         <span class="pcoded-mtext">Data Buku</span>
                                         <span class="pcoded-mcaret"></span>
                                     </a>
                                 </li>
-                                <li class="pcoded ">
+                                <li class="<?php if($_GET['page']=='transaksi'){ echo 'pcoded-trigger active'; } ?> ">
                                     <a href="?page=transaksi">
                                         <span class="pcoded-micon"><i class="ti-wallet"></i></span>
                                         <span class="pcoded-mtext">Transaksi</span>
@@ -229,10 +229,9 @@
     <!-- Required Jquery -->
     <script type="text/javascript" src="assets/plugins/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <script src="assets/plugins/dataTables/jquery.dataTables.js"></script>
-
     <script type="text/javascript" src="assets/plugins/tether/dist/js/tether.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/dataTables/jquery.dataTables.js"></script>
 	<script src="assets/plugins/dataTables/dataTables.bootstrap.js"></script>
     <!-- jquery slimscroll js -->
     <script type="text/javascript" src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
@@ -248,9 +247,6 @@
     <script>
         $(document).ready(function () {
 			$('#dataTable').dataTable();
-            $( ".pcoded-navbar" ).on('click','li',function(){
-
-            });
 		});   
     </script>
 </body>

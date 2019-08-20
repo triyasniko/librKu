@@ -1,6 +1,6 @@
 <div class="page-header">
     <div class="page-header-title">
-        <h4>Dashboard</h4>
+        <h4>Data Transaksi</h4>
     </div>
     <div class="page-header-breadcrumb">
         <ul class="breadcrumb-title">

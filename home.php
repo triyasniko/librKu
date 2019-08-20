@@ -108,59 +108,33 @@
             </div>
         </div>
         <!--Follow block Ends-->
-        <!-- Product table Start -->
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-block">
-                    <h5>Product Detail</h5>
+        <div class="col-md-12">
+            <div class="card card-contact borderless-card">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover" id="dataTable">
+                        <thead>
+                            <tr>
+                                <th>Rendering engine</th>
+                                <th>Browser</th>
+                                <th>Platform(s)</th>
+                                <th>Engine version</th>
+                                <th>CSS grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="odd gradeX">
+                                <td>Trident</td>
+                                <td>Internet Explorer 4.0</td>
+                                <td>Win 95+</td>
+                                <td class="center">4</td>
+                                <td class="center">X</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
                 </div>
-                <div class="card-block product-table p-t-35">
-                    <div class="table-responsive">
-                        <table class="table" id="dataTable">
-                            <thead>
-                                <tr class="text-uppercase">
-                                    <th>Product</th>
-                                    <th>Quantity</th>
-                                    <th>Total</th>
-                                    <th>Dilevery</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1. Awesome T-shirt</td>
-                                    <td>24</td>
-                                    <td><button type="button" class="btn btn-primary">$550</button></td>
-                                    <td>M oscow,Lenina 44-1</td>
-                                    <td><button type="button" class="btn btn-success btn-round btn-outline-success">View</button></td>
-                                </tr>
-                                <tr>
-                                    <td>2. Awesome T-shirt</td>
-                                    <td>24</td>
-                                    <td><button type="button" class="btn btn-primary">$550</button></td>
-                                    <td>M oscow,Lenina 44-1</td>
-                                    <td><button type="button" class="btn btn-success btn-round btn-outline-success">View</button></td>
-                                </tr>
-                                <tr>
-                                    <td>3. Awesome T-shirt</td>
-                                    <td>24</td>
-                                    <td><button type="button" class="btn btn-primary">$550</button></td>
-                                    <td>M oscow,Lenina 44-1</td>
-                                    <td><button type="button" class="btn btn-success btn-round btn-outline-success">View</button></td>
-                                </tr>
-                                <tr>
-                                    <td>4. Awesome T-shirt</td>
-                                    <td>24</td>
-                                    <td><button type="button" class="btn btn-primary">$550</button></td>
-                                    <td>M oscow,Lenina 44-1</td>
-                                    <td><button type="button" class="btn btn-success btn-round btn-outline-success">View</button></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+            </div>                 
         </div>
-        <!-- Product table End -->
+        
     </div>
 </div>
