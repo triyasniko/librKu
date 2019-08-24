@@ -1,5 +1,7 @@
 <?php 
     error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+    include 'koneksi.php';
+    include 'function.php';
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -47,11 +49,11 @@
 
 <body>
     <!-- Pre-loader start -->
-    <div class="theme-loader">
+    <!-- <div class="theme-loader">
         <div class="ball-scale">
             <div></div>
         </div>
-    </div>
+    </div> -->
     <!-- Pre-loader end -->
 
     <div id="pcoded" class="pcoded">
@@ -159,14 +161,28 @@
                                         if ($page=="anggota") {
                                             if ($aksi=="") {
                                                 include 'page/anggota/anggota.php';
+                                            }elseif ($aksi=="tambah") {
+                                                include 'page/anggota/tambah.php';
+                                            }elseif ($aksi=="ubah") {
+                                                include 'page/anggota/ubah.php';
+                                            }elseif ($aksi=="hapus"){
+                                                include 'page/anggota/hapus.php';
                                             }
                                         }elseif ($page=="buku") {
                                             if ($aksi=="") {
                                                 include 'page/buku/buku.php';
+                                            }elseif ($aksi=="tambah") {
+                                                include 'page/buku/tambah.php';
+                                            }elseif ($aksi=="ubah") {
+                                                include 'page/buku/ubah.php';
+                                            }elseif ($aksi=="hapus"){
+                                                include 'page/buku/hapus.php';
                                             }
                                         }elseif ($page=="transaksi"){
                                             if ($aksi=="") {
                                                 include 'page/transaksi/transaksi.php';
+                                            }elseif($aksi=="tambah"){
+                                                include 'page/transaksi/tambah.php';
                                             }
                                         }elseif ($page==""){
                                             include 'home.php';

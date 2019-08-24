@@ -81,7 +81,7 @@
             <div class="card card-contact borderless-card">
                 <div class="widget-profile-card-1">
                     <div class="bg-layer"></div>
-                    <img class="img-fluid" src="assets/images/slider8.jpg" alt="card-style-1">
+                    <img class="profile-bg-img img-fluid" src="assets/images/user-profile/bg-img1.jpg" alt="bg-img">
                     <button class="btn btn-default btn-outline-default btn-icon b-lft"><i class="icofont icofont-ui-user"></i></button>
                     <button class="btn btn-default btn-outline-default btn-icon b-rgt"><i class="icofont icofont-ui-message"></i></button>
                     <div class="middle-user">
@@ -91,57 +91,9 @@
                 <div class="card-block text-center p-10">
                     <h5>Gregory Johnes</h5>
                     <p class="text-muted">Califonia, USA</p>
-                    <button class="btn btn-primary btn-round m-t-10 m-b-20">Contact</button>
-                </div>
-                <div class="card-footer">
-                    <div class="row text-center">
-                        <div class="col-6 b-r-default">
-                            <h4 class="text-primary">345</h4>
-                            <span class="text-muted text-uppercase">Followers</span>
-                        </div>
-                        <div class="col-6">
-                            <h4 class="text-primary">1,434</h4>
-                            <span class="text-muted text-uppercase">Followings</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
         <!--Follow block Ends-->
-        <div class="col-md-12">
-            <div class="card card-contact borderless-card">
-                <div class="">
-                    <table width="100%" class="table table-responsive table-striped table-bordered table-hover" id="dataTable">
-                        <thead>
-                            <tr>
-                                <th>Rendering engine</th>
-                                <th>Browser</th>
-                                <th>Platform(s)</th>
-                                <th>Engine version</th>
-                                <th>CSS grade</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="odd gradeX">
-                                <td>Trident</td>
-                                <td>Internet Explorer 4.0</td>
-                                <td>Win 95+</td>
-                                <td class="center">4</td>
-                                <td class="center">X</td>
-                            </tr>
-                            <tr class="odd gradeX">
-                                <td>Trident</td>
-                                <td>firefox 4.0</td>
-                                <td>Win 95+</td>
-                                <td class="center">4</td>
-                                <td class="center">X</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>                 
-        </div>
-        
     </div>
 </div>
