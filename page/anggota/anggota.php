@@ -15,7 +15,9 @@
     </div>
 </div>
 <div class="page-body">
-    <a href="?page=anggota&aksi=tambah" class="btn btn-primary btn-sm"><i class="ti-plus"></i>Tambah Data</a>
+    <a href="?page=anggota&aksi=tambah" class="btn btn-primary btn-sm text-left"><i class="ti-plus"></i>Tambah Data</a>
+    <a href="./laporan/laporan_anggota_excel.php" target="blank" class="btn btn-success text-right btn-sm"><i class="ti-book"> Export To Excel</i></a>
+    <a href="./laporan/laporan_anggota_pdf.php" target="blank" class="btn btn-default text-right btn-sm"><i class="ti-printer"></i>Export to PDF</a>
     <div class="row">
         <div class="col-md-12">
             <div class="card card-contact borderless-card">

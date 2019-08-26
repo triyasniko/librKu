@@ -1,7 +1,20 @@
 <?php 
+    session_start();
     error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
     include 'koneksi.php';
     include 'function.php';
+
+    if (!isset($_SESSION['petugas']) OR empty($_SESSION['petugas'])) {
+        echo "<script>
+                alert('Anda harus login dulu !!!');
+                location='login.php';
+              </script>";
+        exit();
+    }
+    $id_petugas=$_SESSION['petugas']['id'];
+        $ambil=$koneksi->query("SELECT*FROM tb_user WHERE id='$id_petugas' ");
+        $pecah=$ambil->fetch_assoc();
+
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -49,11 +62,11 @@
 
 <body>
     <!-- Pre-loader start -->
-    <!-- <div class="theme-loader">
+    <div class="theme-loader">
         <div class="ball-scale">
             <div></div>
         </div>
-    </div> -->
+    </div>
     <!-- Pre-loader end -->
 
     <div id="pcoded" class="pcoded">
@@ -89,7 +102,8 @@
                                 <li class="user-profile header-notification">
                                     <a href="#!">
                                         <img src="assets/images/user.png" alt="User-Profile-Image">
-                                        <span>John Doe</span>
+
+                                        <span><?php echo $pecah['nama']; ?></span>
                                         <i class="ti-angle-down"></i>
                                     </a>
                                     <ul class="show-notification profile-notification">
@@ -99,7 +113,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#!">
+                                            <a href="logout.php">
                                                 <i class="ti-layout-sidebar-left"></i> Logout
                                             </a>
                                         </li>
@@ -181,8 +195,12 @@
                                         }elseif ($page=="transaksi"){
                                             if ($aksi=="") {
                                                 include 'page/transaksi/transaksi.php';
-                                            }elseif($aksi=="tambah"){
+                                            }elseif ($aksi=="tambah"){
                                                 include 'page/transaksi/tambah.php';
+                                            }elseif ($aksi=="kembali") {
+                                                include 'page/transaksi/kembali.php';
+                                            }elseif ($aksi=="perpanjang"){
+                                                include 'page/transaksi/perpanjang.php';
                                             }
                                         }elseif ($page==""){
                                             include 'home.php';

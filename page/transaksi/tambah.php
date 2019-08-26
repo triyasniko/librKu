@@ -112,19 +112,24 @@ $kembali=date("d-m-Y",$tujuh_hari);
 
 		$sql=$koneksi->query("SELECT*FROM tb_buku WHERE judul='$judul' ")or die(mysqli_error($koneksi));
 		while ($data=$sql->fetch_assoc()) {
-			$sisa=$_POST['jumlah_buku'];
+			$sisa=$data['jumlah_buku'];
 
 			if ($sisa == 0) {
 				?>
 				<script type="text/javascript">
-					alert("Stok buku habis Silahkan tunggu sampai dikembalikan");
+					alert("Stok buku habis\nSilahkan tunggu sampai dikembalikan");
 					location='index.php?page=transaksi&aksi=tambah';
 				</script>
 				<?php
 			}else{
+				$sql=$koneksi->query("INSERT INTO tb_transaksi 
+					(judul,nim,nama,tgl_pinjam,tgl_kembali,status) VALUES
+					('$judul','$nim','$nama','$tgl_pinjam','$tgl_kembali','pinjam') ");
+				$sql2=$koneksi->query("UPDATE tb_buku SET jumlah_buku=(jumlah_buku-1) WHERE id='$id' ");
 				?>
 				<script type="text/javascript">
-					alert("buku bisa dipinjam");
+					alert("Data berhasil ditambahkan");
+					location='index.php?page=transaksi';
 				</script>
 				<?php
 			}

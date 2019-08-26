@@ -27,8 +27,12 @@
                         </div>
                         <div class="col-6  text-right">
                             <div class="counter-card-text">
-                                <h3>23%</h3>
-                                <p>ACTIVE USER</p>
+                                <?php 
+                                    $sql=$koneksi->query("SELECT*FROM tb_transaksi");
+                                    $data_transaksi=$sql->num_rows;
+                                 ?>
+                                <h3><?php echo $data_transaksi; ?></h3>
+                                <p>Transaksi</p>
                             </div>
                         </div>
                     </div>
@@ -42,12 +46,16 @@
                 <div class="card-block-big">
                     <div class="row">
                         <div class="col-6 counter-card-icon">
-                            <i class="icofont icofont-chart-line-alt"></i>
+                            <i class="icofont icofont-book-alt"></i>
                         </div>
                         <div class="col-6 text-right">
                             <div class="counter-card-text">
-                                <h3>15%</h3>
-                                <p>DOWN RATE</p>
+                                <?php 
+                                    $sql=$koneksi->query("SELECT*FROM tb_buku");
+                                    $data_buku=$sql->num_rows;
+                                 ?>
+                                <h3><?php echo $data_buku; ?></h3>
+                                <p>Buku</p>
                             </div>
                         </div>
                     </div>
@@ -61,12 +69,16 @@
                 <div class="card-block-big">
                     <div class="row">
                         <div class="col-6 counter-card-icon">
-                            <i class="icofont icofont-chart-line"></i>
+                            <i class="icofont icofont-id-card"></i>
                         </div>
                         <div class="col-6 text-right">
                             <div class="counter-card-text">
-                                <h3>35%</h3>
-                                <p>SALE RATIO</p>
+                                <?php 
+                                    $sql=$koneksi->query("SELECT*FROM tb_anggota");
+                                    $data_anggota=$sql->num_rows;
+                                 ?>
+                                <h3><?php echo $data_anggota; ?></h3>
+                                <p>Anggota</p>
                             </div>
                         </div>
                     </div>

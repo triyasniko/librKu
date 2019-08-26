@@ -66,11 +66,11 @@
                                 </td>
                                 <td><?php echo $data['status']; ?></td>
                                 <td>
-                                    <a href="?page=transaksi&aksi=ubah&id=<?php echo $data['nim']; ?>" class="btn btn-warning btn-sm">
-                                        <i class="ti-pencil-alt">&nbsp;Ubah</i>
+                                    <a href="?page=transaksi&aksi=kembali&id=<?php echo $data['id']; ?>&judul=<?php echo $data['judul']; ?>" class="btn btn-warning btn-sm">
+                                        <i class="ti-exchange-vertical">&nbsp;Kembali</i>
                                     </a>
-                                    <a onclick="return confirm('Yakin mau dihapus??')" href="?page=anggota&aksi=hapus&id=<?php echo $data['nim']; ?>" class="btn btn-danger btn-sm">
-                                        <i class="ti-trash">&nbsp;Hapus</i>
+                                    <a href="?page=transaksi&aksi=perpanjang&id=<?php echo $data['id']; ?>&judul=<?php echo $data['judul']; ?>&lambat=<?php echo $lambat; ?>&tgl_kembali=<?php echo $data['tgl_kembali']; ?>" class="btn btn-success btn-sm">
+                                        <i class="ti-pencil-alt">&nbsp;Perpanjang</i>
                                     </a>
                                 </td>
                             </tr>
